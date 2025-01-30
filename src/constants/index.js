@@ -120,11 +120,22 @@ const technologies = [
 
 const experiences = [
 	{
+		title: "R&D Engineer, Co-op",
+		company_name: "Schaeffler, Canada",
+		icon: starbucks,
+		iconBg: "#804dee",
+		date: "Nov. 2024 - Present",
+		points: [
+			"Designed fixtures using CATIA to support manufacturing and assembly processes.",
+			"Collaborated with cross-functional teams to support product development and validation processes.",
+		],
+	},
+	{
 		title: "R&D Engineering Student, Co-op",
 		company_name: "Vitesco Technologies",
 		icon: starbucks,
 		iconBg: "#804dee",
-		date: "Sep. 2024 - Present",
+		date: "Sep. 2024 - Nov. 2024",
 		points: [
 			"Coordinate and analyze performance and durability testing on products.",
 			"Write reports and present information on test results, product analysis, and advanced technology studies.",

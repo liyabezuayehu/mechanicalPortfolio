@@ -47,15 +47,22 @@ const About = () => {
 				variants={fadeIn("", "", 0.1, 1)}
 				className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
 			>
-				A dedicated professional with an M.Eng. in Mechanical Engineering from
-				the University of Ottawa, skilled in designing and simulation using CAD
-				and CAE tools such as AutoCAD, CATIA V5, and Ansys Fluent. Proficient in
-				problem-solving and critical thinking, developed through hands-on
-				experience in engineering projects. Demonstrates exceptional
-				organizational, communication, and project management skills, gained
-				through diverse roles, including internships in marketing and
-				operations. Experienced in teaching and tutoring, with a proven ability
-				to simplify complex concepts and engage effectively with learners.
+				Hello, and welcome to my portfolio website! I’m a dedicated engineering
+				professional with an M.Eng. in Mechanical Engineering from the
+				University of Ottawa. I graduated as the valedictorian, securing 1st
+				rank in B.Tech Aerospace Engineering. I was also honored with the
+				Erasmus Mundus STRAINS scholarship and a full SII scholarship for my
+				academic performance.
+				<br />
+				<br />I have strong skills in CAD and CAE tools like AutoCAD, CATIA V5,
+				and Ansys Fluent, along with a problem-solving mindset developed through
+				hands-on engineering projects. My experience spans engineering,
+				marketing, and operations, where I've honed my organization,
+				communication, and teaching abilities. I'm passionate about simplifying
+				complex ideas and making learning engaging.
+				<br />
+				<br />
+				Feel free to explore my work and get in touch!
 			</motion.p>
 
 			{/* <div className="mt-20 flex flex-wrap gap-10">
