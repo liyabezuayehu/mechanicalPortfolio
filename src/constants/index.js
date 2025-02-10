@@ -27,6 +27,12 @@ import {
 	nozzle,
 	delivery_drone,
 	sailplane,
+	edu_profile,
+	amanuel,
+	drone_video,
+	drone_des1,
+	drone_des2,
+	drone_des3,
 } from "../assets";
 
 export const navLinks = [
@@ -208,8 +214,7 @@ const testimonials = [
 		name: "Amanuel Terefe",
 		designation: "Associate Researcher",
 		company: "Bio and Emerging Technology Institute - BETin",
-		image:
-			"https://media.licdn.com/dms/image/v2/C4E03AQE-s0Bfjgo7Vg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1660221915496?e=1743033600&v=beta&t=CiQLaW3hls2v5ZD0lnPA7NKjCe2DjdXvu5B-uJkKtVg",
+		image: amanuel,
 	},
 	{
 		testimonial:
@@ -217,8 +222,7 @@ const testimonials = [
 		name: "Eden Gebremeskel",
 		designation: "Incoming Analyst",
 		company: "Goldman Sachs",
-		image:
-			"https://media.licdn.com/dms/image/v2/D4D03AQFw_03qrzqeqQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1695657671553?e=1743033600&v=beta&t=mAhIlX8pJhz9eMQAM-MIbyySZTcN8xCfYnpnmL64wT8",
+		image: edu_profile,
 	},
 ];
 
@@ -242,9 +246,11 @@ const projects = [
 			},
 		],
 		image: sailplane,
-		source_code_link: "https://github.com/",
+		// source_code_link: "https://github.com/",
+		technologies_used: ["CAD Software - Winglet Design & Modeling"],
 	},
 	{
+		// id: 1,
 		name: "Design and Geometrical Optimization of Nozzle to Reduce Noise for Jet Engine",
 		description:
 			"Focused on the use of chevron nozzles as a potential solution for jet noise reduction. Conducted computational analysis by importing 3D models of chevron and convergent nozzles into ANSYS to evaluate their performance in reducing jet noise.",
@@ -263,9 +269,14 @@ const projects = [
 			},
 		],
 		image: nozzle,
-		source_code_link: "https://github.com/",
+		source_code_link:
+			"https://iopscience.iop.org/article/10.1149/10701.1529ecst/pdf",
+		technologies_used: [
+			"ANSYS - Computational Analysis for Jet Noise Reduction",
+		],
 	},
 	{
+		// id: 2,
 		name: "Vertical Take-off and Landing Fixed Wing UAS",
 		description:
 			"Successfully integrated vertical take-off and landing (VTOL) capabilities with fixed-wing flight efficiency to meet project objectives. Utilized Fusion 360 and XFLR 5 for detailed design, ensuring aerodynamic performance and structural integrity. Conducted performance testing using MATLAB and eCALC, analyzing flight dynamics and efficiency to validate design efficiency.",
@@ -284,9 +295,14 @@ const projects = [
 			},
 		],
 		image: plane_1,
-		source_code_link: "https://github.com/",
+		// source_code_link: "https://github.com/",
+		technologies_used: [
+			"Fusion 360 - Conceptual Sketch & Modelling",
+			"XFLR5 - Aerodynamic Performance Analysis",
+		],
 	},
 	{
+		// id: 3,
 		name: "Medical Delivery Drone",
 		description:
 			"Designed a drone capable of vertical take-off and landing, operating efficiently in fixed-wing mode during the mission. The research analyzes various drone models, such as fixed-wing and rotary-wing drones, and proposes a hybrid design combining the advantages of both types.",
@@ -304,8 +320,20 @@ const projects = [
 				color: "pink-text-gradient",
 			},
 		],
-		image: delivery_drone,
-		source_code_link: "https://github.com/",
+		image: drone_des1,
+		source_code_link: "https://www.doi.org/10.56726/IRJMETS31972",
+		technologies_used: [
+			"XFLR5",
+			"Fusion 360 - Conceptual Sketch & Modelling",
+			"Ansys - Aerodynamics and Structural Analysis",
+			"MATLAB",
+		],
+		demos: [
+			{ type: "image", url: drone_des1 },
+			{ type: "image", url: drone_des2 },
+			{ type: "image", url: drone_des1 },
+			{ type: "video", url: drone_video },
+		],
 	},
 ];
 

@@ -8,11 +8,11 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
-    >
+//   <Tilt className='xs:w-[250px] w-full'>
+//     <motion.div
+//       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+//       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+//     >
       <div
         options={{
           max: 45,
@@ -31,39 +31,30 @@ const ServiceCard = ({ index, title, icon }) => (
           {title}
         </h3>
       </div>
-    </motion.div>
-  </Tilt>
+    // </motion.div>
+//   </Tilt>
 );
 
 const About = () => {
   return (
 		<>
-			<motion.div variants={textVariant()}>
-				<p className={styles.sectionSubText}>Introduction</p>
-				<h2 className={styles.sectionHeadText}>Overview.</h2>
-			</motion.div>
+			{/* <motion.div variants={textVariant()}> */}
+			<p className={styles.sectionSubText}>Introduction</p>
+			<h2 className={styles.sectionHeadText}>Overview.</h2>
+			{/* </motion.div> */}
 
-			<motion.p
-				variants={fadeIn("", "", 0.1, 1)}
-				className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-			>
-				Hello, and welcome to my portfolio website! I’m a dedicated engineering
-				professional with an M.Eng. in Mechanical Engineering from the
-				University of Ottawa. I graduated as the valedictorian, securing 1st
-				rank in B.Tech Aerospace Engineering. I was also honored with the
-				Erasmus Mundus STRAINS scholarship and a full SII scholarship for my
-				academic performance.
+			<p className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify">
+				Hey there, and thanks for stopping by! I’ve always had fun with numbers,
+				which is probably why I became an engineer. There’s something exciting
+				about making things fly against gravity, creating models, and bringing
+				them to life from scratch. I graduated as the valedictorian in my B.Tech
+				Aerospace Engineering and went on to earn my M.Eng. in Mechanical
+				Engineering at the University of Ottawa. Along the way, I picked up a
+				few scholarships, tackled exciting projects, and honed my skills in CAD,
+				CAE, and engineering analysis.
 				<br />
-				<br />I have strong skills in CAD and CAE tools like AutoCAD, CATIA V5,
-				and Ansys Fluent, along with a problem-solving mindset developed through
-				hands-on engineering projects. My experience spans engineering,
-				marketing, and operations, where I've honed my organization,
-				communication, and teaching abilities. I'm passionate about simplifying
-				complex ideas and making learning engaging.
-				<br />
-				<br />
-				Feel free to explore my work and get in touch!
-			</motion.p>
+				
+			</p>
 
 			{/* <div className="mt-20 flex flex-wrap gap-10">
 				{services.map((service, index) => (

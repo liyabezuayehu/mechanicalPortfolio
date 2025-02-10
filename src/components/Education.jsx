@@ -135,7 +135,7 @@ const EducationCard = ({ education }) => {
 				{education.points.map((point, index) => (
 					<li
 						key={`education-point-${index}`}
-						className="text-white-100 text-[14px] pl-1 tracking-wider"
+						className="text-white-100 text-[14px] pl-1 tracking-wider "
 					>
 						{point}
 					</li>
@@ -148,14 +148,14 @@ const EducationCard = ({ education }) => {
 const Education = () => {
 	return (
 		<>
-			<motion.div variants={textVariant()}>
+			{/* <motion.div variants={textVariant()}> */}
 				<p className={`${styles.sectionSubText} text-center`}>
 					Where I have learnt
 				</p>
 				<h2 className={`${styles.sectionHeadText} text-center`}>
 					Education.
 				</h2>
-			</motion.div>
+			{/* </motion.div> */}
 
 			<div className="mt-20 flex flex-col">
 				<VerticalTimeline>

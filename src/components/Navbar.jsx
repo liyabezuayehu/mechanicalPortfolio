@@ -42,10 +42,14 @@ const Navbar = () => {
 						window.scrollTo(0, 0);
 					}}
 				>
-					<img src={liya_logo_m} alt="logo" className="w-9 h-9 object-contain" />
+					<img
+						src={liya_logo_m}
+						alt="logo"
+						className="w-9 h-9 object-contain"
+					/>
 					<p className="text-white text-[18px] font-bold cursor-pointer flex ">
 						Liya Bezuayehu &nbsp;
-						<span className="sm:block hidden"> | Mechanical Engineer</span>
+						{/* <span className="sm:block hidden"> | Mechanical Engineer</span> */}
 					</p>
 				</Link>
 
@@ -81,7 +85,7 @@ const Navbar = () => {
 								<li
 									key={nav.id}
 									className={`font-poppins font-medium cursor-pointer text-[16px] ${
-										active === nav.title ? "text-white" : "text-secondary"
+										active === nav.title ? "text-[#915EFF]" : "text-white"
 									}`}
 									onClick={() => {
 										setToggle(!toggle);

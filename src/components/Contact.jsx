@@ -6,6 +6,15 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import {
+	FaGithub,
+	FaLinkedin,
+	FaTwitter,
+	FaEnvelope,
+	FaLink,
+	FaLinkedinIn
+} from "react-icons/fa";
+
 
 const Contact = () => {
   const formRef = useRef();
@@ -68,8 +77,8 @@ const Contact = () => {
 		<div
 			className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
 		>
-			<motion.div
-				variants={slideIn("left", "tween", 0.2, 1)}
+			<div
+				// variants={slideIn("left", "tween", 0.2, 1)}
 				className="flex-[0.75] bg-secondary p-8 rounded-2xl"
 			>
 				<p className={styles.sectionSubText}>Get in touch</p>
@@ -120,8 +129,25 @@ const Contact = () => {
 					>
 						{loading ? "Sending..." : "Send"}
 					</button>
+					{/* <p className="text-lg font-semibold">Or ...</p> */}
+					<div className="flex justify-center gap-6 mt-3">
+						<a
+							href="mailto:liyabezuayehuwork.com"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<FaEnvelope className="text-2xl hover:text-gray-400" />
+						</a>
+						<a
+							href="https://www.linkedin.com/in/liya-bezuayehu/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<FaLinkedin className="text-2xl hover:text-gray-400" />
+						</a>
+					</div>
 				</form>
-			</motion.div>
+			</div>
 
 			{/* <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}

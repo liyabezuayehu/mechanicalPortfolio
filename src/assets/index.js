@@ -34,6 +34,12 @@ import plane_1 from "./plane_1.jpg";
 import sailplane from "./sailplane.jpeg"
 import delivery_drone from "./delivery_drone.jpg";
 import nozzle from "./nozzle.jpg";
+import edu_profile from "./edu_profile.jpeg";
+import amanuel from "./amanuel.jpeg"
+import drone_video from "./drone_video.mp4"
+import drone_des1 from "./drone_des1.jpg"
+import drone_des2 from "./drone_des2.jpg";
+import drone_des3 from "./drone_des3.jpg";
 
 export {
   logo,
@@ -68,5 +74,11 @@ export {
   plane_1,
   nozzle,
   delivery_drone,
-  sailplane
+  sailplane,
+  edu_profile,
+  amanuel,
+  drone_video,
+  drone_des1,
+  drone_des2,
+  drone_des3
 };
